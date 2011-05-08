@@ -94,15 +94,15 @@ $res = $p->toArray();
 var_dump($res); // array(1) {["first_name"]=>string(4) "Mike" ["height"]=> int(82) }
 
 
-# Print the Data print_r result , just like print_r #
+# Print the Data print_r result just like print_r
 
-$p->print_r();
-* OUTPUT:  Array([first_name] => Mike [height] => 82 )
-
+$p->print_r(); // OUTPUT:  Array([first_name] => Mike [height] => 82 )
 
 
-# Save the print_r result to a string, just like print_r
+
+# Save the print_r result to a string just like print_r
 $res  = $p->print_r(true);
+
 
 # JSON encode the object
 echo $p->to_json(); // {"first_name":"Mike","height":82}
