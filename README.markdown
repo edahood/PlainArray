@@ -66,10 +66,7 @@ echo count($p) ; // 1
 # Get an Actual Array
 
 $res = $p->toArray();
-var_dump($res); // array(1) {
-                //    ["first_name"]=>
-                //    string(4) "Mike"
-               //     }
+var_dump($res); // array(1) {["first_name"]=>string(4) "Mike"}
 
 
 
@@ -94,23 +91,13 @@ echo count($p) . "\n" ; // 2
 # Get an Actual Array #
 
 $res = $p->toArray();
-var_dump($res); // array(1) {
-                //    ["first_name"]=>
-                //    string(4) "Mike",
-               //     ["height"]=>
-               //     int(82)
-               //     }
+var_dump($res); // array(1) {["first_name"]=>string(4) "Mike" ["height"]=> int(82) }
 
 
 # Print the Data print_r result , just like print_r #
 
 $p->print_r();
-               OUTPUT:
-                Array
-                (
-                    [first_name] => Mike
-                    [height] => 82
-               )
+* OUTPUT:  Array([first_name] => Mike [height] => 82 )
 
 
 
