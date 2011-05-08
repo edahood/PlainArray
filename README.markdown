@@ -101,6 +101,8 @@ var_dump($res); // array(1) {
                //     int(82)
                //     }
 
+
+# print_r result , just like print_r
 $p->print_r(); // Print The Data
               // OUTPUT:
               //  Array
@@ -111,18 +113,24 @@ $p->print_r(); // Print The Data
 
 
 
+# Save the print_r result to a string, just like print_r
+$res  = $p->print_r(true);
 
-$res  = $p->print_r(true); // Save the print_r result to a string, just like print_r
-
+# JSON encode the object
 echo $p->to_json(); // {"first_name":"Mike","height":82}
 
+# GET the Keys or fields
 $keys = $p->keys(); // $keys == array('first_name', 'last_name');
+
+
+# Boolean Functions
 
 function boolTest($res){
    $res =  $res !== false ? "TRUE" : "FALSE";
    return $res;
 }
 
+### isset() Examples ###
 echo boolTest( isset($p['first_name'] ) ) . "\n" ; // TRUE
 
 echo boolTest( isset($p->first_name ) )  . "\n"; // TRUE
@@ -130,10 +138,11 @@ echo boolTest( isset($p->first_name ) )  . "\n"; // TRUE
 echo boolTest( isset($p->last_name ) )  . "\n"; // FALSE
 
 
-echo "\n=====\n";
+### array_key_exists WILL NOT WORK ###
 echo boolTest( array_key_exists('last_name',$p ) )  . "\n"; // FALSE
 
 
+##### More Examples #####
 See the test files test/*Test.php for more examples.
 
 ##### Warnings and gotchas #####
