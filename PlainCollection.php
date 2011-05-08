@@ -1,6 +1,8 @@
 <?php
 
-/**
+/** PlainCollection
+ *
+ * @version 0.1.3
  * @todo DOCUMENT PlainCollection Methods and Usage
  */
 class PlainCollection extends PlainObject implements IteratorAggregate {

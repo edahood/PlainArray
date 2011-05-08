@@ -2,7 +2,7 @@
  /**
      *
      * PlainObject
-     *
+     * @version 0.1.3
      *
      * A One File Base Object Class.  PlainObject is a countable Object with magic __set and __get methods.
      *

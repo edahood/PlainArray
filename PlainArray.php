@@ -3,7 +3,7 @@
 /**
      *
      * PlainArray
-     *
+     * @version 0.1.3
      *
      * A Super Array Class, extends PlainObject to add ArrayAccess, Iterator interfaces.
      *
