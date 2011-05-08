@@ -60,10 +60,10 @@ This will load PlainObject, PlainArray, and PlainCollection
 $p = new PlainArray();
 $p->first_name = 'Mike' ;  // Set first_name using magic __set()
 
-// Get a Count
+# Get a Count
 echo count($p) ; // 1
 
-// Get an Actual Array
+# Get an Actual Array
 
 $res = $p->toArray();
 var_dump($res); // array(1) {
@@ -73,25 +73,25 @@ var_dump($res); // array(1) {
 
 
 
-// Access it Like an Array
+# Access it Like an Array
 echo $p[first_name] ; // Mike
 
-// Access it Like an Object
+# Access it Like an Object
 echo $p->first_name ; // Mike
 
-// Access the First Value
+# Access the First Value
 echo $p->first() ; // Mike
 
-// Access the Last Value
+# Access the Last Value
 echo $p->last() ; // Mike
 
 
 $p['height'] = 82;
 
-// Get a Count
+# Get a Count
 echo count($p) . "\n" ; // 2
 
-// Get an Actual Array
+# Get an Actual Array
 
 $res = $p->toArray();
 var_dump($res); // array(1) {
