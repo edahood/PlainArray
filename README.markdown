@@ -102,14 +102,14 @@ var_dump($res); // array(1) {
                //     }
 
 $p->print_r(); // Print The Data
-               /* OUTPUT:
-                Array
-                (
-                    [first_name] => Mike
-                    [height] => 82
-                )
+              // OUTPUT:
+              //  Array
+              //  (
+              //      [first_name] => Mike
+              //      [height] => 82
+              //  )
 
-               */
+
 
 
 $res  = $p->print_r(true); // Save the print_r result to a string, just like print_r
