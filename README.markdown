@@ -91,7 +91,7 @@ $p['height'] = 82;
 # Get a Count
 echo count($p) . "\n" ; // 2
 
-# Get an Actual Array
+# Get an Actual Array #
 
 $res = $p->toArray();
 var_dump($res); // array(1) {
@@ -102,14 +102,15 @@ var_dump($res); // array(1) {
                //     }
 
 
-# print_r result , just like print_r
-$p->print_r(); // Print The Data
-              // OUTPUT:
-              //  Array
-              //  (
-              //      [first_name] => Mike
-              //      [height] => 82
-              //  )
+# Print the Data print_r result , just like print_r #
+
+$p->print_r();
+               OUTPUT:
+                Array
+                (
+                    [first_name] => Mike
+                    [height] => 82
+               )
 
 
 
@@ -142,10 +143,10 @@ echo boolTest( isset($p->last_name ) )  . "\n"; // FALSE
 echo boolTest( array_key_exists('last_name',$p ) )  . "\n"; // FALSE
 
 
-##### More Examples #####
+## More Examples ##
 See the test files test/*Test.php for more examples.
 
-##### Warnings and gotchas #####
+## Warnings and gotchas ##
 
 * is_array() will return false on PlainObject Instances.  This is why there is a static function PlainObject::is_iterable().
 
