@@ -86,7 +86,7 @@ echo $p->last() ; // Mike
 $p['height'] = 82;
 
 # Get a Count
-echo count($p) . "\n" ; // 2
+echo count($p)  ; // 2
 
 # Get an Actual Array #
 
@@ -119,15 +119,15 @@ function boolTest($res){
 }
 
 ### isset() Examples ###
-echo boolTest( isset($p['first_name'] ) ) . "\n" ; // TRUE
+echo boolTest( isset($p['first_name'] ) ) ; // TRUE
 
-echo boolTest( isset($p->first_name ) )  . "\n"; // TRUE
+echo boolTest( isset($p->first_name ) ) ; // TRUE
 
-echo boolTest( isset($p->last_name ) )  . "\n"; // FALSE
+echo boolTest( isset($p->last_name ) ) ; // FALSE
 
 
 ### array_key_exists WILL NOT WORK ###
-echo boolTest( array_key_exists('last_name',$p ) )  . "\n"; // FALSE
+echo boolTest( array_key_exists('last_name',$p ) ) ; // FALSE
 
 
 ## More Examples ##
